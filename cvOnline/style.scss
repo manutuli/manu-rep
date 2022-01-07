@@ -1,0 +1,68 @@
+$colour-orange:#cc8624;
+$colour-rose:#cc2475;
+$colour-blue:#2469cc;
+$colour-green:#24cc24;
+$colour-white: white;
+// maps
+// $custom-colours: (
+//   active: (  
+//     orange: $colour-orange,
+//     rose: $colour-rose,
+//     blue: $colour-blue,
+//     green: $colour-green,
+//   ),
+
+//   hover: (
+//     white: $colour-white,
+//   )
+// );
+
+// mixins
+@mixin img-ratio {
+    width: 100%;
+        display: block;
+        overflow: hidden;
+        padding-top: 56.25%;
+        position: relative;
+        & img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            transform: translate(-50%, -50%);
+        }
+}
+@mixin dad-bod {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:$colour-blue;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 1.7;
+}
+
+.header__title{
+    background-color: $colour-orange;
+}
+
+.photo{
+    background-color: $colour-white;
+}
+
+main aside{
+    background-color: $colour-green;
+    @include dad-bod();
+}
+
+footer{
+    background-color: $colour-rose;
+}
+
+nav{
+    background-color: $colour-rose;
+}
