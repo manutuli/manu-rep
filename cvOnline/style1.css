@@ -1,16 +1,9 @@
+/*# sourceMappingURL=style1.css.map */
 body {
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
   font-weight: 100;
   line-height: 1.7;
-}
-
-.header__title {
-  background-color: #cc8624;
-}
-
-.photo {
-  background-color: white;
 }
 
 main aside {
@@ -29,4 +22,19 @@ nav {
   background-color: #cc2475;
 }
 
-/*# sourceMappingURL=style1.css.map */
+.header__title {
+  background-color: #cc8624;
+}
+
+.carousel {
+  background-color: white;
+}
+.skills{
+  color: red;
+}
+.education{
+}
+.experiences{
+}
+.info{
+}
